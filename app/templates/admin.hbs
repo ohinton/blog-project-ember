@@ -2,7 +2,7 @@
   {{#each model as |post|}}
     <li>{{post.title}}</li>
     <button {{action 'destroyPost' post}}>Delete</button>
-    <!-- {{update-post post=post update="update"}} -->
+    {{update-post post=post update="update"}}
   {{/each}}
 </ul>
 
