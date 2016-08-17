@@ -1,8 +1,9 @@
 {{#link-to 'post' post.id}}
 <img src={{post.photo}} class="img-responsive">
 <h2>{{post.title}}</h2>
+<hr>
 {{/link-to}}
 <div class="author">
   <h4>{{post.author}}</h4>
-  <h4>{{post.timestamp}}</h4>
+  <h4 id="timestamp">{{post.timestamp}}</h4>
 </div>

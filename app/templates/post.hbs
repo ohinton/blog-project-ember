@@ -1,8 +1,9 @@
-<img src={{model.photo}} alt={{model.title}} class="img-responsive">
-<h1>{{model.title}}</h1>
-<br>
-<p>{{model.author}}</p>
-<p>{{model.timestamp}}</p>
-<hr>
-<br>
-<p>{{model.text}}</p>
+<div class="post-content">
+  <img src={{model.photo}} alt={{model.title}} class="img-responsive">
+  <div class="post-header">
+    <h2>{{model.title}}</h2>
+    <h4>{{model.author}}</h4>
+  </div>
+  <h5>{{model.timestamp}}</h5>
+  <p>{{model.text}}</p>
+</div>

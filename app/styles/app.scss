@@ -1,0 +1,45 @@
+.wrapper {
+  width: 90%;
+  margin: 70px auto;
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-around;
+  .post-tile {
+    display: flex;
+    position: relative;
+    max-height: 522px;
+    width: 31%;
+    margin: 0 0.5em;
+    img {
+      width: auto;
+      max-height: 364px;
+      padding: 0.5em;
+    }
+    h2 {
+      text-align: center;
+    }
+    .author {
+      display: flex;
+      justify-content: space-between;
+      h4 {
+        padding-left: 0.5em;
+      }
+    }
+  }
+
+  .post-content {
+    display: flex;
+    flex-direction: column;
+    .post-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      h4 {
+        color: grey;
+      }
+    }
+    h5 {
+      color: grey;
+    }
+  }
+}

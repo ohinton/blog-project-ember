@@ -14,10 +14,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyCvcLGHYCy2zsdTp4mZXEPuiiYxBBatWuM",
-      authDomain: "blog-project-daa23.firebaseapp.com",
-      databaseURL: "https://blog-project-daa23.firebaseio.com",
-      storageBucket: "blog-project-daa23.appspot.com",
+      apiKey: "AIzaSyAnpWNOs4KO0dCLauvjuXo5FCU-Gcnu_8A",
+      authDomain: "blog-project-a1c6f.firebaseapp.com",
+      databaseURL: "https://blog-project-a1c6f.firebaseio.com",
+      storageBucket: "blog-project-a1c6f.appspot.com"
     },
 
     APP: {
