@@ -1,0 +1,11 @@
+{{#if addNewTag}}
+  <form>
+    <div class="form-group">
+        <label for="name">Tag:</label>
+        {{input value=name id="name" class="form-control"}}
+      </div>
+      <button {{action 'saveTag'}}>Save</button>
+    </form>
+{{else}}
+<button {{action 'showTagForm'}} class="btn btn-success">Add Tag</button>
+{{/if}}

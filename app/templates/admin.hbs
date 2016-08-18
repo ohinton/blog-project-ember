@@ -1,7 +1,8 @@
+  {{new-tag saveTag="saveTag"}}
 
-  {{new-post save="save"}}
+  {{new-post save="save" tags=model.tags}}
 
-    {{#each model as |post|}}
+    {{#each model.posts as |post|}}
     <div class="post-tile">
       {{post-tile post=post}}
     </div>

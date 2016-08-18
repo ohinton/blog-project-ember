@@ -24,6 +24,11 @@
         {{input value=timestamp id="timestamp" class="form-control" type="date"}}
       </div>
 
+      <!-- <select onchange={{action "selectTag" value="target.value"}}>
+        {{#each tags as |tagChoice|}}
+          <option value={{tagChoice}} selected={{eq tag tagChoice}}>{{tagChoice.name}}</option>
+        {{/each}}
+      </select> -->
       <button class="btn btn-primary" {{action 'save'}}>Save</button>
   </form>
 {{else}}
