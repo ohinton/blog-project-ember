@@ -1,5 +1,10 @@
-{{#each model as |post|}}
+{{#each model.posts as |post|}}
   <div class="post-tile">
     {{post-tile post=post}}
   </div>
 {{/each}}
+
+<h2>Comment Feed</h2>
+<ul>
+  {{comment-feed comments=model.comments}}
+</ul>
