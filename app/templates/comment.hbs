@@ -1,9 +1,6 @@
 <div class="comment-content">
   <div class="comment-header">
-    <h2>{{model.author}}</h2>
-    <h3>{{model.date}}</h3>
-    <hr>
-    <p>{{model.text}}</p>
+    {{comment-detail comment=model destroyComment="destroyComment" }}
   </div>
 </div>
 
