@@ -7,3 +7,12 @@
   <h5>{{model.timestamp}}</h5>
   <p>{{model.text}}</p>
 </div>
+
+<h2>Comments</h2>
+<ul>
+  {{#each model.comments as |comment|}}
+     {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
+
+{{new-comment saveComment="saveComment" post=model}}

@@ -1,10 +1,12 @@
-<ul>
-  {{#each model as |post|}}
-    <li>{{post.title}}</li>
-    <button {{action 'destroyPost' post}}>Delete</button>
-    {{update-post post=post update="update"}}
-  {{/each}}
-</ul>
 
+  {{new-post save="save"}}
 
-{{new-post save="save"}}
+    {{#each model as |post|}}
+    <div class="post-tile">
+      {{post-tile post=post}}
+    </div>
+    <div class="admin-buttons">
+      <button {{action 'destroyPost' post}} class="btn btn-danger">Delete</button>
+      {{update-post post=post update="update"}}
+    </div>
+    {{/each}}

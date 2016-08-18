@@ -2,30 +2,30 @@
   <form>
     <div class="form-group">
         <label for="title">Title:</label>
-        {{input value=title id="title"}}
+        {{input value=title id="title" class="form-control"}}
       </div>
       <div class="form-group">
         <label for="author">Author:</label>
-        {{input value=author id="author"}}
+        {{input value=author id="author" class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="text">Post:</label>
-        {{input value=text id="text"}}
+        {{textarea value=text id="text" class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="photo">Photo:</label>
-        {{input value=photo id="photo"}}
+        {{input value=photo id="photo" class="form-control"}}
       </div>
 
       <div class="form-group">
         <label for="timestamp">Time Stamp:</label>
-        {{input value=timestamp id="timestamp"}}
+        {{input value=timestamp id="timestamp" class="form-control" type="date"}}
       </div>
 
-      <button {{action 'save'}}>Save</button>
+      <button class="btn btn-primary" {{action 'save'}}>Save</button>
   </form>
 {{else}}
-  <button {{action 'showAddForm'}}>NewPost</button>
+  <button class="btn btn-primary" {{action 'showAddForm'}}>New Post</button>
 {{/if}}
